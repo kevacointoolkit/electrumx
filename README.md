@@ -353,7 +353,7 @@ export KEVA_TLS_KEY=/etc/letsencrypt/live/$KEVA_ELECTRUM_HOST/privkey.pem
 
 export KEVA_TLS_CERT=/etc/letsencrypt/live/$KEVA_ELECTRUM_HOST/fullchain.pem
 
-#reboot to test
+# reboot to test
 
 reboot
 
