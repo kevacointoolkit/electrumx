@@ -127,7 +127,7 @@ sudo apt-get install certbot
 
 sudo certbot certonly --standalone
 
-#setup email and domain
+# setup email and domain
 
 sudo chmod -R 755 /etc/letsencrypt/archive/
 
@@ -277,7 +277,7 @@ ipfs daemon
 
 ctrl+c to stop
 
-#start ipfs when reboot
+# start ipfs when reboot
 
 vi /etc/systemd/system/ipfs.service
 
@@ -302,6 +302,8 @@ Restart=on-failure
 [Install]
 
 WantedBy=multi-user.target
+
+# test
 
 systemctl daemon-reload
 
