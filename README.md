@@ -1,3 +1,7 @@
+https://keva.app/?62493681
+
+
+
 # ubuntu 20.04
 
 apt-get update && apt-get -y upgrade
@@ -361,4 +365,35 @@ reboot
 
 cd keva_ipfs
 
+nohup ./go_be >/dev/null 2>&1 &
+
+
+# Update Electrumx
+
+update
+
+./kevacoin/bin/kevacoin-cli stop
+
+systemctl stop electrumx.kevacoin.service
+
+rm -rf electrumx
+
+git clone https://github.com/kevacoin-project/electrumx
+
+if the database is change, delete the kevax and mkdir kevax.
+
+rm -rf kevax
+
+mkdir kevax
+
+reboot
+
+./kevacoin/bin/kevacoin-cli get_info
+
+systemctl status electrumx.kevacoin.service
+
+wait sync ok and reboot
+
+#start go
+cd keva_ipfs
 nohup ./go_be >/dev/null 2>&1 &
