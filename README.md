@@ -131,6 +131,10 @@ sudo apt-get install certbot
 
 sudo certbot certonly --standalone
 
+crontab -e 
+
+0 0 1 * * /usr/bin/certbot renew --force-renewal
+
 # setup email and domain
 
 sudo chmod -R 755 /etc/letsencrypt/archive/
