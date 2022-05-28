@@ -384,6 +384,8 @@ rm -rf electrumx
 
 git clone https://github.com/kevacoin-project/electrumx
 
+systemctl start electrumx.kevacoin.service
+
 if the database is change, delete the kevax and mkdir kevax.
 
 rm -rf kevax
