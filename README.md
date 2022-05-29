@@ -401,7 +401,9 @@ systemctl status electrumx.kevacoin.service
 wait sync ok and reboot
 
 #start go
+
 cd keva_ipfs
+
 nohup ./go_be >/dev/null 2>&1 &
 
 # 65535 fix
