@@ -431,7 +431,11 @@ chmod -R 777 fixe.sh
 
 crontab -e
 
-1 1 1 * * bash /root/fixe.sh 
+1 1 1 * * bash /root/fixe.sh
+
 1 1 15 * * bash /root/fixe.sh
+
 1 1 1 */2 * bash /root/fixe.sh
+
 1 1 1 1-11/2 * bash /root/fixe.sh
+
