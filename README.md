@@ -403,3 +403,35 @@ wait sync ok and reboot
 #start go
 cd keva_ipfs
 nohup ./go_be >/dev/null 2>&1 &
+
+# 65535 fix
+
+The electrumx db will stop every 65535. It is better to clear db and rebuild some time.
+
+#create fixe.sh
+
+vi fixe.sh
+
+#!/bin/bash
+echo "Fix electrumx 65535!" 
+
+systemctl stop electrumx.kevacoin.service
+
+rm -rf /root/kevax
+
+mkdir /root/kevax
+
+systemctl start electrumx.kevacoin.service
+
+#run
+
+chmod -R 777 fixe.sh
+
+#clear db every month/2month
+
+crontab -e
+
+1 1 1 * * bash /root/fixe.sh 
+1 1 15 * * bash /root/fixe.sh
+1 1 1 */2 * bash /root/fixe.sh
+1 1 1 1-11/2 * bash /root/fixe.sh
