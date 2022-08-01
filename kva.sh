@@ -1,6 +1,9 @@
 #!/bin/sh
 
-##sudo -s
+echo "This is a shell script to automatically install kevacoin+electrumX tcp on Ubuntu for localhost."
+echo "Source:https://github.com/kevacointoolkit/electrumx"
+echo "You need input sudo -s to get rights to setup kevacoind and input chmod +x kva.sh to run the scripts ./kva.sh"
+
 ##kevacoin
 
 wget=/usr/bin/wget
@@ -149,8 +152,10 @@ systemctl start keva
 
 systemctl status keva
 
+systemctl enable keva
+
 cd /root
 
 ./kevacoin/bin/kevacoin-cli get_info
 
-systemctl enable keva
+
