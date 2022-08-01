@@ -13,17 +13,16 @@ check electrumx status
 
 systemctl status electrumx.kevacoin.service
 
-# Install electrumx on virsual machine
+if the 
 
-Download Ubuntu 20.04  
+# If you run this kva.sh on vps like linode, you need to run update first.
+
+apt-get update && apt-get -y upgrade
+
+You can also install Ubuntu 20.04 byself
 
 https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-live-server-amd64.iso
 
-Download VirtualBox 
-
-https://www.virtualbox.org/wiki/Downloads
-
-Install Ubuntu on VirtualBox and use kva.sh
 
 # ubuntu 20.04
 
