@@ -13,6 +13,18 @@ check electrumx status
 
 systemctl status electrumx.kevacoin.service
 
+# Install electrumx on virsual machine
+
+Download Ubuntu 20.04  
+
+https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-live-server-amd64.iso
+
+Download VirtualBox 
+
+https://www.virtualbox.org/wiki/Downloads
+
+Install Ubuntu on VirtualBox and use kva.sh
+
 # ubuntu 20.04
 
 apt-get update && apt-get -y upgrade
