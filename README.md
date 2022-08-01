@@ -13,8 +13,6 @@ check electrumx status
 
 systemctl status electrumx.kevacoin.service
 
-if the 
-
 # If you run this kva.sh on vps like linode, you need to run update first.
 
 apt-get update && apt-get -y upgrade
