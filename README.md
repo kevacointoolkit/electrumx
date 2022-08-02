@@ -3,9 +3,13 @@ https://keva.app/?62493681
 # Now you can use kva.sh script to automatically install kevacoin+electrumx local tcp server on ubuntu 20.04.
 
 wget keva.app/kva.sh
+
 chmod +x kva.sh
+
 sudo -s
+
 ./kva.sh
+
 
 Then you can use your ip and tcp port 50001 in kevacoin app.
 
