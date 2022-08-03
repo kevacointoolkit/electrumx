@@ -127,8 +127,6 @@ systemctl daemon-reload
 
 systemctl start electrumx.kevacoin.service
 
-systemctl status electrumx.kevacoin.service
-
 systemctl enable electrumx.kevacoin.service
 
 cd /etc/systemd/system
@@ -149,8 +147,6 @@ EOF
 systemctl daemon-reload
 
 systemctl start keva
-
-systemctl status keva
 
 systemctl enable keva
 
