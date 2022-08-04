@@ -150,7 +150,7 @@ systemctl start keva
 
 systemctl enable keva
 
-cd /root
+cd /home
 
 ./kevacoin/bin/kevacoin-cli get_info
 
