@@ -119,10 +119,6 @@ ALLOW_ROOT=True
 EOF
 
 
-
-
-./kevacoin/bin/kevacoin-cli get_info
-
 systemctl daemon-reload
 
 systemctl start electrumx.kevacoin.service
