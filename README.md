@@ -135,7 +135,7 @@ sudo apt-get install libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev
 
 python3.8 -m pip install Cython
 
-python3.8 -m pip install git+git://github.com/twmht/python-rocksdb.git
+python3.8 -m pip install git+https://github.com/twmht/python-rocksdb.git
 
 apt-get update && apt-get -y upgrade
 
