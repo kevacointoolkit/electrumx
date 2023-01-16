@@ -395,6 +395,45 @@ cd keva_ipfs
 
 nohup ./go_be >/dev/null 2>&1 &
 
+# Run keva ipfs with Electrumx
+
+If you want to run keva ipfs with Electrumx, you can use this folk.
+
+git clone https://github.com/kevacoin-team/keva_ipfs
+
+cd ..
+
+cd keva_ipfs
+
+go build .
+
+vi /etc/systemd/system/kevaipfs.service
+
+[Unit]
+
+Description=Keva IPFS
+After=network.target
+
+[Service]
+
+WorkingDirectory=/root/keva_ipfs
+ExecStart=/root/keva_ipfs/keva_ipfs
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target
+
+# test
+
+systemctl daemon-reload
+
+systemctl start kevaipfs
+
+systemctl status kevaipfs
+
+systemctl enable kevaipfs
 
 # Update Electrumx
 
