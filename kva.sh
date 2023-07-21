@@ -13,7 +13,7 @@ cd /home
 
 apt install git -y
 
-git clone https://github.com/kevacoin-project/electrumx
+git clone https://github.com/kevacoin-team/electrumx
 
 wget "https://github.com/kevacoin-project/kevacoin/releases/download/v0.16.8.0/kevacoin-0.16.8.0.tar.gz"
 
