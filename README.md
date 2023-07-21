@@ -236,7 +236,7 @@ ALLOW_ROOT=True
 
 apt install git
 
-git clone https://github.com/kevacoin-project/electrumx
+git clone https://github.com/kevacoin-team/electrumx
 
 # check block stats
 
